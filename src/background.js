@@ -186,7 +186,7 @@ async function runLoop() {
 }
 
 async function updateSteamStatus(playing) {
-    const apiUrl = `https://bocchi.app:2200/?game=${playing}`;
+    const apiUrl = `https://your-api-endpoint/?game=${playing}`;
 
     try {
         const response = await fetch(apiUrl, {

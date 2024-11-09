@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Steam & Spotify Assistant</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mainContent" class="main-content">
+            <div class="main-controls">
+                <button id="settingsBtn" class="btn settings-btn">⚙️ Settings</button>
+                <button id="toggleBtn" class="btn toggle-btn">Start</button>
+            </div>
+        </div>
+
+        <div id="settingsModal" class="settings-panel">
+            <div class="settings-content">
+                <h2>Settings</h2>
+                <div class="form-group">
+                    <label for="spotifyClientId">Spotify Client ID:</label>
+                    <input type="password" id="spotifyClientId" class="credential-input">
+                    <button class="toggle-visibility">👁️</button>
+                </div>
+                <div class="form-group">
+                    <label for="spotifyClientSecret">Spotify Client Secret:</label>
+                    <input type="password" id="spotifyClientSecret" class="credential-input">
+                    <button class="toggle-visibility">👁️</button>
+                </div>
+                <div class="modal-buttons">
+                    <button id="saveBtn" class="btn save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
